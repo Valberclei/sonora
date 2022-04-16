@@ -1,0 +1,17 @@
+{% extends 'base_01.html' %}
+
+{% block conteudo %}
+<div class="card mb-3">
+    <div class="card-header">
+        Tem certeza que deseja remover a música abaixo?
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{musica.titulo}}</h5>
+        <hr>
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn btn-danger" type="submit">Remover</button>
+        </form>
+    </div>
+</div>
+{% endblock conteudo %}

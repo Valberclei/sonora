@@ -1,0 +1,37 @@
+{% extends 'base_01.html' %}
+{% load meus_filtros %}
+{% load static %}
+
+{% block conteudo %}
+    <p style="text-align: left">
+       <h3>Depois de cadastrado você poderá publicar uma imagem da sua banda além de<br>
+           poder mostrar seu trabalho pro mundo!</h3></p>
+<form method="post">
+    <div class="form-group">
+        {% csrf_token %}
+        {{ form_usuario.username.errors }}
+        <label>Nome de usuário: </label>
+        {{form_usuario.username|addclass:'form-control'}}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form_usuario.password1.errors }}
+        <label>Senha: </label>
+        {{form_usuario.password1|addclass:'form-control'}}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form_usuario.password2.errors }}
+        <label>Confirme a senha: </label>
+        {{form_usuario.password2|addclass:'form-control'}}
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="submit" value="Cadastrar" class="btn btn-primary">
+        <div>
+        <img src="{% static 'images/gato-bonito-viola.png' %}" align="right"><br>
+        <label><h1 align="left">É sempre uma honra<br>ter você na nossa companhia!</h1></label>
+        </div>
+    </div>
+</form>
+{% endblock conteudo %}

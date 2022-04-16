@@ -1,0 +1,30 @@
+{% extends 'base_01.html' %}
+
+{% load static %}
+
+{% block conteudo %}
+
+<div class="card-body">
+<br>
+<h1>Listagem de músicas</h1>
+
+{% for musica in musicas %}
+
+<br>
+<br>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">{{musica.titulo}}</h5>
+        <hr>
+        <a href="{% url 'editar_musica' musica.id %}">Alterar música</a>
+        <a href="{% url 'remover_musica' musica.id %}">Remover música</a>
+    </div>
+</div>
+{% endfor %}
+<br>
+<a href="{% url 'cadastrar_musica' %}"><input type="button" class="btn btn-primary mb-3" value="Cadastrar música"></a>
+<br>
+<img src="{% static 'images/guitarra.png' %}" align="right">
+    <br>
+</div>
+{% endblock conteudo %}

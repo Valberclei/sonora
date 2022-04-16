@@ -1,0 +1,16 @@
+{% extends 'base_01.html' %}
+
+{% load static %}
+
+{% block conteudo %}
+<br>
+<div class="card mb-3" align="center">
+    <h1>Create Post Page</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit New Post</button>
+    </form>
+    <br>
+</div>
+{% endblock conteudo %}

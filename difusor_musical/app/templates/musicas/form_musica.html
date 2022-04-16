@@ -1,0 +1,23 @@
+{% extends 'base_01.html' %}
+{% load meus_filtros %}
+{% load static %}
+
+{% block conteudo %}
+
+<br><h1>Obrigado por cadastrar seu som no nosso sistema !!!</h1><br>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form_musica.titulo.errors }}
+     <div class="form-group">
+    <label>Música: </label>
+    {{ form_musica.titulo|addclass:'form-control' }}
+    </div><br>
+    <div class="form-group">
+      <input type="submit" value="Salvar">
+    </div>
+    <p><h3>Vamos salvar sua música no nosso banco de dados, então capricha no título ok?</h3>
+    <br>
+    <img src="{% static 'images/esquilo-bonito.small.png' %}">
+</form>
+{% endblock conteudo %}

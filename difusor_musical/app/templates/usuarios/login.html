@@ -1,0 +1,39 @@
+{% extends 'base_01.html' %}
+{% load meus_filtros %}
+{% load static %}
+
+{% block conteudo %}
+<form method="post">
+    {% csrf_token %}
+    {% for message in messages %}
+       <div class="alert alert-danger">
+           {{message}}
+       </div>
+    {% endfor %}
+    <br>
+    <div class="form-group">
+        <label>Nome de usuário: </label>
+        {{form_login.username|addclass:'form-control'}}
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Senha: </label>
+        {{form_login.password|addclass:'form-control'}}
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="submit" value="Entrar" class="btn btn-primary">
+    </div>
+    <br>
+</form>
+
+<form>
+    <div>
+        <label><h2>Esta é nossa página de login. Entre com seu nome de usuário e senha</h2><br>
+        <h3>Entre com seu nome de usuário e senha ou cadastre-se</h3></label><br>
+        <label>Se você não é cadastrado clique <a href="{% url 'cadastrar_usuario' %}">aqui</a></label>
+        <img src="{% static 'images/login_02.png' %}" align="right">
+    </div>
+</form>
+
+{% endblock conteudo %}

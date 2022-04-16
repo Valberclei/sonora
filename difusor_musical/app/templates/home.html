@@ -1,0 +1,15 @@
+{% extends 'base_01.html' %}
+
+{% block conteudo %}
+
+<h1>Django Image Upload</h1>
+<ul>
+
+    {% for post in object_list %}
+      <h2>{{ post.title }}</h2>
+      <img src="{{ post.cover.url }}" alt="{{ post.title }}">
+    {% endfor %}
+
+</ul>
+
+{% endblock conteudo %}
