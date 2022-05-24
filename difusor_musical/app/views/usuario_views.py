@@ -6,12 +6,14 @@ from django.views.generic import ListView, CreateView
 from django.urls import reverse_lazy
 from ..forms import PostForm
 from ..models import PostImage
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 class HomePageView(ListView):
     model = PostImage
     template_name = "home.html"
 
-class CreatePostView(CreateView):
+class CreatePostView(LoginRequiredMixin, CreateView):
     form_class = PostForm
     model = PostImage
     template_name = "post.html"
