@@ -12,6 +12,6 @@ urlpatterns = [
     path('cadastrar_usuario/', cadastrar_usuario, name='cadastrar_usuario'),
     path('logar_usuario/', logar_usuario, name='logar_usuario'),
     path('deslogar_usuario/', deslogar_usuario, name='deslogar_usuario'),
-    path("", HomePageView.as_view(), name="home"),
+    path("home", HomePageView.as_view(), name="home"),
     path("post/", CreatePostView.as_view(), name="add_post"),
 ]
