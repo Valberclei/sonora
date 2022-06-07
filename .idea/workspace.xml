@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e989935a-0f20-41f3-b984-37a1bd160108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/difusor_musical/blog/templates/blog/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/difusor_musical/blog/templates/blog/base_03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/difusor_musical/blog/templates/blog/home_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/difusor_musical/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/difusor_musical/app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/difusor_musical/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/app/static/app/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/difusor_musical/blog/static/blog/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/difusor_musical/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/difusor_musical/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/difusor_musical/difusor_musical/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/difusor_musical/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/difusor_musical/difusor_musical/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/media/images/Clus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/difusor_musical/media/images/studioCity.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
